@@ -4,7 +4,7 @@ function App() {
   return (
     <>
       <div>
-        <h1>&lt;/Coming soon&gt;</h1>
+        <h1>&lt;/Hi I'm Nethaji&gt;</h1>
       </div>
     </>
   );
