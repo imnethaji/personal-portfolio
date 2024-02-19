@@ -29,6 +29,7 @@ function App() {
           <h3>Tech Stack</h3>
           <img src="/tech-stack/html.svg"></img>
           <img src="/tech-stack/css.svg"></img>
+          <img src="/tech-stack/js.svg"></img>
           <img src="./tech-stack/react.svg"></img>
           <img src="/tech-stack/next-js.svg"></img>
           <img src="/tech-stack/photoshop.svg"></img>
