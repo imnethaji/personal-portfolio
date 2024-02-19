@@ -1,12 +1,14 @@
 import "./App.sass";
+import { Alert } from "@mui/material";
 
 function App() {
   return (
     <>
       <div className="container">
-        <p>Thank you for visiting</p>
         <h1>&lt;/Hi I&apos;m Nethaji&gt;</h1>
-        <p>This page will get an update soon...</p>
+        <Alert variant="outlined" severity="info">
+          This page is under construction. We will update soon.
+        </Alert>
       </div>
     </>
   );
