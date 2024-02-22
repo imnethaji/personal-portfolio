@@ -1,10 +1,12 @@
 import "./App.sass";
+import Nav from "../components/Nav";
 import { Alert } from "@mui/material";
 import { TypeAnimation } from "react-type-animation";
 
-function App() {
+function Home() {
   return (
     <>
+      <Nav />
       <div className="container">
         <h1>Hi I&apos;m Nethaji</h1>
         <TypeAnimation
@@ -44,4 +46,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
