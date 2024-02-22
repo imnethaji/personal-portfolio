@@ -1,6 +1,5 @@
 import "./App.sass";
 import Nav from "../components/Nav";
-import { Alert } from "@mui/material";
 import { TypeAnimation } from "react-type-animation";
 
 function Home() {
@@ -29,20 +28,17 @@ function Home() {
         />
         <div className="tech-stack">
           <h3>Tech Stack</h3>
-          <img src="/tech-stack/html.svg"></img>
-          <img src="/tech-stack/css.svg"></img>
-          <img src="/tech-stack/js.svg"></img>
-          <img src="/tech-stack/ts-logo.svg"></img>
-          <img src="./tech-stack/react.svg"></img>
-          <img src="/tech-stack/next-js.svg"></img>
-          <img src="/tech-stack/aws-logo.svg"></img>
-          <img src="/tech-stack/photoshop.svg"></img>
-          <img src="/tech-stack/figma.svg"></img>
-          <img src="/tech-stack/vscode.svg"></img>
+          <div className="logo-container">
+            <img src="/tech-stack/html.svg"></img>
+            <img src="/tech-stack/css.svg"></img>
+            <img src="/tech-stack/js.svg"></img>
+            <img src="/tech-stack/vscode.svg"></img>
+            <img src="/tech-stack/react.svg"></img>
+            <img src="/tech-stack/next-js.svg"></img>
+            <img src="/tech-stack/photoshop.svg"></img>
+            <img src="/tech-stack/figma.svg"></img>
+          </div>
         </div>
-        <Alert variant="outlined" severity="info" style={{ marginTop: "3em" }}>
-          This page is under construction. We will update soon.
-        </Alert>
       </div>
     </>
   );

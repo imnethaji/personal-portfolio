@@ -3,11 +3,12 @@ import "./ErrorPage.sass";
 
 const ErrorPage = () => {
   return (
-    <div className="container">
-      <h1>Uh oh! You are lost, aren&apos;t ya?</h1>
-      <button>
-        <Link>Click me to go home</Link>
-      </button>
+    <div className="error-container flex flex-col">
+      <img src="/tech-stack/error404.svg" alt="" id="error-image" />
+
+      <Link className="error-btn-txt">
+        <button>Take me to home</button>
+      </Link>
     </div>
   );
 };
