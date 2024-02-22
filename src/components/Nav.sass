@@ -1,7 +1,9 @@
 nav
     display: flex
+    align-items: center
     justify-content: space-between
     width: 70%
+    height: 50px
     margin: 1em auto
 
 
@@ -20,3 +22,9 @@ ul
 a
     color: black
     text-decoration: none
+
+@media screen and (max-width:800px) 
+    nav
+        justify-content: center
+    ul
+        display: none

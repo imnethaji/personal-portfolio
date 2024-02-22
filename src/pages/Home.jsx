@@ -32,8 +32,10 @@ function Home() {
           <img src="/tech-stack/html.svg"></img>
           <img src="/tech-stack/css.svg"></img>
           <img src="/tech-stack/js.svg"></img>
+          <img src="/tech-stack/ts-logo.svg"></img>
           <img src="./tech-stack/react.svg"></img>
           <img src="/tech-stack/next-js.svg"></img>
+          <img src="/tech-stack/aws-logo.svg"></img>
           <img src="/tech-stack/photoshop.svg"></img>
           <img src="/tech-stack/figma.svg"></img>
           <img src="/tech-stack/vscode.svg"></img>
