@@ -5,7 +5,7 @@ const Nav = () => {
   return (
     <nav>
       <Link to="/">
-        <img src="../../public/nethaji-logo.svg" alt="" id="nethaji-logo" />
+        <img src="/nethaji-logo.svg" alt="" id="nethaji-logo" />
       </Link>
       <ul>
         <li>
