@@ -1,11 +1,26 @@
-.react-logo 
-  transition: transform 0.5s ease-in-out
-  
-.animate-react-logo 
-  animation: scaleAndRotate 1.5s forwards
+.container
+  margin: 0
+  padding: 0
+  display: flex
+  width: 100vw
+  height: 80vh
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  &>div
+    text-align: center
 
+  h1
+    font-size: 5em
 .tech-stack
     text-align: center
+    border-radius: 1em
+    padding: 1em
+    margin-top: 1em
+    &>h3 
+      margin-top: 0
+      font-size: 1.5em
+
 
 @keyframes scaleAndRotate 
   0%
@@ -36,10 +51,7 @@ img
       display: grid
       grid-template-columns: 1fr 1fr 1fr
       grid-row-gap: 2em
+      justify-items: center
 
-.container
-  display: flex
-  flex-direction: column
-  align-items: center
-  flex: grow
-  justify-content: center
+    h1
+      font-size: 3em
