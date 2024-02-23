@@ -1,9 +1,16 @@
+:root
+  --opera-hero-glow-1-color-1: rgba(3, 61, 253, 0.23)
+  --opera-hero-glow-1-color-2: hsla(0,0%,100%,0)
+  --opera-hero-glow-2-color-1: rgba(101, 63, 238, 0.22)
+  --opera-hero-glow-2-color-2: hsla(0,0%,100%,0)
+  
 .container
+
   margin: 0
   padding: 0
   display: flex
   width: 100vw
-  height: 80vh
+  height: 100vh
   flex-direction: column
   align-items: center
   justify-content: center
@@ -17,43 +24,64 @@
     border-radius: 1em
     padding: 1em
     margin-top: 1em
+    height: 80vh
     &>h3 
       margin-top: 0
       font-size: 1.5em
 
-
-@keyframes scaleAndRotate 
-  0%
-    transform: scale(1)
-  
-  25% 
-    transform: scale(1.5) rotate(0deg)
-  
-  75% 
-    transform: scale(1.5) rotate(360deg)
-  
-  100% 
-    transform: scale(1) rotate(360deg)
+.hero-text
+  color: #5021ff
 
 img
     width: 40px
     margin-left: 1em
     scale: 1
     transition: scale 100ms ease-in-out
-    &:hover:not(#nethaji-logo,#error-image)
+    &:hover:not(#nethaji-logo,#error-image,img.social-logo)
         scale: 1.5
         transition: scale 100ms ease-in-out
 
-@media screen and (max-width:800px) 
-    img:not(#nethaji-logo,#error-image)
-        width: 5em
-    .logo-container
-      display: grid
-      grid-template-columns: 1fr 1fr 1fr
-      grid-row-gap: 2em
-      justify-items: center
+.footer-container
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  
 
-    h1
-      margin-top: 4em
-      font-size: 3em
+.border
+  width: 95%
+  border-top: 2px solid #e7edf1
 
+.logos
+  display: flex
+  align-items: center
+  justify-content: center
+
+.logos > a
+    display: flex
+    align-items: center
+    justify-content: center  
+    background: #e7edf1
+    padding: .8em
+    margin-left: .5em
+    border-radius: .6em
+    & > img.social-logo
+      margin: 0
+      width: 20px
+
+.social
+  display: flex
+  &>h4
+    color: #979ca0
+
+@media screen and (max-width:800px)
+  img:not(#nethaji-logo,#error-image,img.social-logo)
+    width: 4em
+  .logo-container
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    grid-row-gap: 4em
+    justify-items: center
+  h1
+    margin-top: 1em
+    font-size: 3em
