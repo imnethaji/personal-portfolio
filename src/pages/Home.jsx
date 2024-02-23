@@ -1,6 +1,7 @@
 import "./App.sass";
 import Nav from "../components/Nav";
 import { TypeAnimation } from "react-type-animation";
+import Footer from "../components/Footer";
 
 function Home() {
   return (
@@ -46,25 +47,7 @@ function Home() {
           <img src="/tech-stack/figma.svg"></img>
         </div>
       </div>
-      <footer>
-        <div className="footer-container">
-          <div className="border"></div>
-          <div className="social">
-            <h4>Connect with me on</h4>
-            <div className="logos">
-              <a href="https://www.instagram.com/im_nethaji/" target="_blank">
-                <img className="social-logo" src="/insta-logo.svg" alt="" />
-              </a>
-              <a href="https://www.linkedin.com/in/imnethaji/" target="_blank">
-                <img className="social-logo" src="/linked-in-logo.svg" alt="" />
-              </a>
-              <a href="https://github.com/imnethaji" target="_blank">
-                <img className="social-logo" src="/github.svg" alt="" />
-              </a>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </>
   );
 }
