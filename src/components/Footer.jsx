@@ -34,9 +34,9 @@ const Footer = () => {
       }`}
       id="element"
     >
-      <div className="footer-container">
-        <div className="border"></div>
-        <div className="social">
+      <div className="footer-container h-6">
+        <div className="border mb-2"></div>
+        <div className="social flex items-center">
           <h4>Connect with me on</h4>
           <div className="logos">
             <a href="https://www.instagram.com/im_nethaji/" target="_blank">

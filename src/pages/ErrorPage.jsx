@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "./ErrorPage.sass";
+import "./ErrorPage.css";
 
 const ErrorPage = () => {
   return (
@@ -7,7 +7,7 @@ const ErrorPage = () => {
       <img src="/tech-stack/error404.svg" alt="" id="error-image" />
 
       <Link className="error-btn-txt">
-        <button>Take me to home</button>
+        <button className="error-btn">Take me to home</button>
       </Link>
     </div>
   );
