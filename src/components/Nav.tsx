@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const cssClasses = "text-white font-bold hover:text-orange-400";
+const cssClasses = "text-white hover:text-orange-400 hover:cursor-pointer";
 const Nav = () => {
   return (
     <nav className="flex justify-between items-center py-5 px-40">
