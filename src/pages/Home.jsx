@@ -5,6 +5,7 @@ function Home() {
     <>
       <Nav />
       <main className="hero">
+        <h4 className="flex text-stone-300">Hello Hello</h4>
         <h1>
           Hi I&apos;m <span className="name">Nethaji!</span>
         </h1>
