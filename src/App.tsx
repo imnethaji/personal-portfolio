@@ -11,7 +11,8 @@ function App() {
             Hi I&apos;m <span className="text-orange-500">Nethaji!</span>
           </h1>
           <h1 className="text-white text-[4em] font-bold">
-            I Photograph, <br /> I Design, <br /> I Develop
+            I Photograph Weddings, <br /> I Design Website, <br /> I Develop Web
+            Apps
           </h1>
         </main>
       </div>
