@@ -3,11 +3,7 @@ import Nav from "./components/Nav";
 import { BackgroundBeams } from "./components/ui/background-beams";
 
 function App() {
-  const textArr = [
-    "I Photograph Weddings",
-    "I Design Websites",
-    "I Develop Web Apps",
-  ];
+  const textArr = ["I Design Websites", "I Develop Web Apps"];
 
   const [index, setIndex] = useState(0);
   const [heroText, setHeroText] = useState(textArr[index]);

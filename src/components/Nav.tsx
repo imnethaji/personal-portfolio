@@ -17,10 +17,13 @@ const Nav = () => {
           <Link to="/">Home</Link>
         </li>
         <li className={cssClasses}>
-          <Link to="/">Photography</Link>
+          <Link to="/">Projects</Link>
         </li>
         <li className={cssClasses}>
-          <Link to="/">Web Design</Link>
+          <Link to="/">Contact</Link>
+        </li>
+        <li className={cssClasses}>
+          <Link to="/">GitHub</Link>
         </li>
       </ul>
     </nav>
