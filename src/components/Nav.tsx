@@ -20,10 +20,12 @@ const Nav = () => {
           <Link to="/">Projects</Link>
         </li>
         <li className={cssClasses}>
-          <Link to="/">Contact</Link>
+          <a href="mailto:reachnethajip@gmail.com">Contact</a>
         </li>
         <li className={cssClasses}>
-          <Link to="/">GitHub</Link>
+          <Link to="https://github.com/imnethaji" target="_blank">
+            GitHub
+          </Link>
         </li>
       </ul>
     </nav>
