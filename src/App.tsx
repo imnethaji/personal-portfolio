@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
+import Lenis from "lenis";
 import Nav from "./components/Nav";
 import { BackgroundBeams } from "./components/ui/background-beams";
 import todoImage from "./assets/to-do-app.png";
@@ -7,8 +8,10 @@ import invoiceAppImage from "./assets/invoice-app.png";
 function App() {
   const projectContainerCSS =
     "bg-black flex flex-col items-center justify-between p-10 text-white max-sm:h-auto";
-  const textArr = ["I Design Websites", "I Develop Web Apps"];
-
+  const textArr = useMemo(
+    () => ["I Design Websites", "I Develop Web Apps"],
+    []
+  );
   const [index, setIndex] = useState(0);
   const [heroText, setHeroText] = useState(textArr[index]);
 
@@ -20,6 +23,23 @@ function App() {
 
     return () => clearInterval(interval);
   }, [index, textArr]);
+
+  // Initialize Lenis for smooth scrolling
+  useEffect(() => {
+    const lenis = new Lenis({
+      duration: 1.2, // Adjust smoothness
+      easing: (t) => 1 - Math.pow(1 - t, 3), // Ease-out effect
+      smoothWheel: true, // Enables smooth scroll for mouse wheel
+    });
+
+    function raf(time: number) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+
+    return () => lenis.destroy(); // Cleanup on unmount
+  }, []);
 
   return (
     <div>
@@ -58,13 +78,11 @@ function App() {
             </div>
             <div className={projectContainerCSS}>
               <h1>Invoice App</h1>
-
               <img
                 className="h-[200px] max-sm:h-[300px]"
                 src={invoiceAppImage}
                 alt="Image of invoice app"
               />
-
               <a
                 href="https://main.d28s2qxxh85lk3.amplifyapp.com/"
                 target="_blank"
