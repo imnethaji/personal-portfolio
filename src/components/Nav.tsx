@@ -17,7 +17,7 @@ const Nav = () => {
           <Link to="/">Home</Link>
         </li>
         <li className={cssClasses}>
-          <Link to="/">Projects</Link>
+          <a target="projects">Projects</a>
         </li>
         <li className={cssClasses}>
           <a href="mailto:reachnethajip@gmail.com">Contact</a>
