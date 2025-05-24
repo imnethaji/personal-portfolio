@@ -9,7 +9,7 @@ import DownArrow from "./components/DownArrow";
 
 function App() {
   const projectContainerCSS =
-    "bg-black flex flex-col items-center justify-between h-[30em] p-8 rounded-2xl text-white max-sm:h-auto";
+    "bg-black flex flex-col items-center justify-between h-[400px] p-8 rounded-2xl text-white max-sm:h-auto";
 
   // Initialize Lenis for smooth scrolling
   useEffect(() => {
@@ -43,9 +43,9 @@ function App() {
 
   return (
     <div>
-      <div className="max-sm:px-6">
+      <div className="HeroSection">
         <Nav />
-        <main className="flex flex-col h-[calc(100vh-82px)] items-center justify-center">
+        <main className="flex flex-col h-screen items-center justify-center">
           <h1 className="text-white text-[6em] font-bold max-sm:text-[3em]">
             Hi, I'm <span className="text-orange-500">Nethaji</span>
           </h1>
@@ -60,17 +60,20 @@ function App() {
           className="h-[100vh] w-100 bg-white flex items-center justify-center max-sm:h-auto rounded-xl"
         >
           <div className="w-[1100px] h-[100%] p-8 flex flex-col items-center">
-            <h1 className="mb-8 text-2xl">Projects</h1>
-            <div className="projectContainer grid grid-rows-2 grid-cols-2 grid-flow-row gap-8 max-sm:grid-cols-1 max-sm:grid-rows-none">
-              <div className={projectContainerCSS}>
+            <h1 className="mb-8 text-[4em] font-bold">Projects</h1>
+            <div className="grid grid-rows-2 grid-cols-2 grid-flow-row gap-8 max-sm:grid-cols-1 max-sm:grid-rows-none">
+              <div
+                className={projectContainerCSS}
+                style={{
+                  backgroundImage: `url(${todoImage})`,
+                  backgroundSize: "contain",
+                  backgroundRepeat: "no-repeat",
+                  backgroundPosition: "center",
+                  height: "400px",
+                }}
+              >
                 <h1>Simple To-do App</h1>
-                <div className="imageContainer">
-                  <img
-                    className="h-[200px] max-sm:h-[300px]"
-                    src={todoImage}
-                    alt="Image of to do app"
-                  />
-                </div>
+                <div className="imageContainer"></div>
                 <a
                   href="https://main.d42gyj6qo5xpt.amplifyapp.com/"
                   target="_blank"
@@ -101,8 +104,8 @@ function App() {
         </section>
       </div>
       <BackgroundBeams className="-z-50" />
-      <footer className="py-2 flex items-center justify-center h-10">
-        <p className="text-white text-sm">
+      <footer className="py-2 flex items-center justify-center h-[30px]">
+        <p className="text-white text-xs">
           &copy; Designed and developed by Nethaji!
         </p>
       </footer>
