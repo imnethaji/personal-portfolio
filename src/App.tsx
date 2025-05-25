@@ -48,54 +48,54 @@ function App() {
         <Nav />
         <HeroSection />
         <Skills />
-        <section
-          id="projects"
-          className="bg-white h-[100vh]flex items-center justify-center max-sm:h-auto"
-        >
-          <div className="w-full max-w-[1200px] h-full p-8 flex flex-col items-center mx-auto">
-            <h2 className="mb-8 text-4xl font-bold">Projects</h2>
-            <div className="grid grid-rows-2 grid-cols-2 grid-flow-row gap-8 max-sm:grid-cols-1 max-sm:grid-rows-none">
-              <div
-                className={projectContainerCSS}
-                style={{
-                  backgroundImage: `url(${todoImage})`,
-                  backgroundSize: "contain",
-                  backgroundRepeat: "no-repeat",
-                  backgroundPosition: "center",
-                  height: "400px",
-                }}
+      </div>
+      <section
+        id="projects"
+        className="bg-white h-[100vh]flex items-center justify-center max-sm:h-auto"
+      >
+        <div className="w-full max-w-[1200px] h-full p-8 flex flex-col items-center mx-auto">
+          <h2 className="mb-8 text-4xl font-bold">Projects</h2>
+          <div className="grid grid-rows-2 grid-cols-2 grid-flow-row gap-8 max-sm:grid-cols-1 max-sm:grid-rows-none">
+            <div
+              className={projectContainerCSS}
+              style={{
+                backgroundImage: `url(${todoImage})`,
+                backgroundSize: "contain",
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "center",
+                height: "400px",
+              }}
+            >
+              <h1>Simple To-do App</h1>
+              <div className="imageContainer"></div>
+              <a
+                href="https://main.d42gyj6qo5xpt.amplifyapp.com/"
+                target="_blank"
               >
-                <h1>Simple To-do App</h1>
-                <div className="imageContainer"></div>
-                <a
-                  href="https://main.d42gyj6qo5xpt.amplifyapp.com/"
-                  target="_blank"
-                >
-                  <button className="p-3 w-40 bg-orange-500 text-white rounded-md">
-                    View Project
-                  </button>
-                </a>
-              </div>
-              <div className={projectContainerCSS}>
-                <h1>Invoice App</h1>
-                <img
-                  className="h-[200px] max-sm:h-[300px]"
-                  src={invoiceAppImage}
-                  alt="Image of invoice app"
-                />
-                <a
-                  href="https://invoice-app-olive-theta.vercel.app/"
-                  target="_blank"
-                >
-                  <button className="p-3 w-40 bg-orange-500 text-white rounded-md">
-                    View Project
-                  </button>
-                </a>
-              </div>
+                <button className="p-3 w-40 bg-orange-500 text-white rounded-md">
+                  View Project
+                </button>
+              </a>
+            </div>
+            <div className={projectContainerCSS}>
+              <h1>Invoice App</h1>
+              <img
+                className="h-[200px] max-sm:h-[300px]"
+                src={invoiceAppImage}
+                alt="Image of invoice app"
+              />
+              <a
+                href="https://invoice-app-olive-theta.vercel.app/"
+                target="_blank"
+              >
+                <button className="p-3 w-40 bg-orange-500 text-white rounded-md">
+                  View Project
+                </button>
+              </a>
             </div>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
       <BackgroundBeams className="-z-50" />
       <footer className="py-6 flex items-center justify-center h-[30px]">
         <p className="text-white text-xs">
