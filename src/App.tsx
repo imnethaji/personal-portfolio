@@ -6,6 +6,7 @@ import todoImage from "./assets/to-do-app.png";
 import invoiceAppImage from "./assets/invoice-app.png";
 import gsap from "gsap";
 import DownArrow from "./components/DownArrow";
+import Skills from "./components/Skills";
 
 function App() {
   const projectContainerCSS =
@@ -55,12 +56,13 @@ function App() {
           </h2>
           <DownArrow></DownArrow>
         </main>
+        <Skills />
         <section
           id="projects"
-          className="h-[100vh] w-100 bg-white flex items-center justify-center max-sm:h-auto rounded-xl"
+          className="bg-white h-[100vh]flex items-center justify-center max-sm:h-auto"
         >
-          <div className="w-[1100px] h-[100%] p-8 flex flex-col items-center">
-            <h1 className="mb-8 text-[4em] font-bold">Projects</h1>
+          <div className="w-full max-w-[1200px] h-full p-8 flex flex-col items-center mx-auto">
+            <h2 className="mb-8 text-4xl font-bold">Projects</h2>
             <div className="grid grid-rows-2 grid-cols-2 grid-flow-row gap-8 max-sm:grid-cols-1 max-sm:grid-rows-none">
               <div
                 className={projectContainerCSS}
@@ -78,8 +80,8 @@ function App() {
                   href="https://main.d42gyj6qo5xpt.amplifyapp.com/"
                   target="_blank"
                 >
-                  <button className="p-4 w-40 bg-white text-black rounded-full">
-                    Show Project
+                  <button className="p-3 w-40 bg-orange-500 text-white rounded-md">
+                    View Project
                   </button>
                 </a>
               </div>
@@ -94,8 +96,8 @@ function App() {
                   href="https://invoice-app-olive-theta.vercel.app/"
                   target="_blank"
                 >
-                  <button className="p-4 w-40 bg-white text-black rounded-full">
-                    Show Project
+                  <button className="p-3 w-40 bg-orange-500 text-white rounded-md">
+                    View Project
                   </button>
                 </a>
               </div>

@@ -4,7 +4,7 @@ const cssClasses = "text-white hover:text-orange-400 hover:cursor-pointer";
 const Nav = () => {
   return (
     <nav className="flex items-center justify-center w-screen py-5 max-sm:px-0 top-8 max-sm:top-0 absolute backdrop-blur-sm">
-      <div className="container w-[60%] rounded-full bg-opacity-60 py-5 px-24 max-sm:px-0 max-sm:h-auto max-sm:rounded-xl flex max-sm:flex-col justify-between items-center">
+      <div className="container w-[60%] rounded-full bg-white bg-opacity-10 py-5 px-24 max-sm:px-0 max-sm:h-auto max-sm:rounded-xl flex max-sm:flex-col justify-between items-center">
         <Link to="/" className="max-sm:m-auto">
           <img
             className="w-10"
