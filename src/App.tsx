@@ -5,8 +5,8 @@ import { BackgroundBeams } from "./components/ui/background-beams";
 import todoImage from "./assets/to-do-app.png";
 import invoiceAppImage from "./assets/invoice-app.png";
 import gsap from "gsap";
-import DownArrow from "./components/DownArrow";
 import Skills from "./components/Skills";
+import HeroSection from "./components/HeroSection";
 
 function App() {
   const projectContainerCSS =
@@ -46,16 +46,7 @@ function App() {
     <div>
       <div className="HeroSection">
         <Nav />
-        <main className="flex flex-col h-screen items-center justify-center">
-          <h1 className="text-white text-[6em] font-bold max-sm:text-[3em]">
-            Hi, I'm <span className="text-orange-500">Nethaji</span>
-          </h1>
-          <h2 className="text-white text-[1.5em] font-semibold max-sm:text-[.8em] text-center mt-4">
-            Aspiring front-end developer crafting responsive and intuitive web
-            apps using HTML, CSS, and JavaScript.
-          </h2>
-          <DownArrow></DownArrow>
-        </main>
+        <HeroSection />
         <Skills />
         <section
           id="projects"
@@ -106,7 +97,7 @@ function App() {
         </section>
       </div>
       <BackgroundBeams className="-z-50" />
-      <footer className="py-2 flex items-center justify-center h-[30px]">
+      <footer className="py-6 flex items-center justify-center h-[30px]">
         <p className="text-white text-xs">
           &copy; Designed and developed by Nethaji!
         </p>
