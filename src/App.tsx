@@ -8,7 +8,7 @@ import HeroSection from "./components/HeroSection";
 
 function App() {
   const projectContainerCSS =
-    "bg-black flex flex-col items-center justify-between h-[400px] p-8 rounded-2xl text-white max-sm:h-auto";
+    "bg-[#222123] flex flex-col items-center justify-between h-[400px] p-8 rounded-2xl text-white max-sm:h-auto";
 
   // Initialize Lenis for smooth scrolling
   useEffect(() => {
@@ -42,14 +42,13 @@ function App() {
 
   return (
     <div>
-      {/* <Nav /> */}
       <div className="HeroSection">
         <HeroSection />
       </div>
       <Skills />
       <section
         id="projects"
-        className="bg-white h-[100vh]flex items-center justify-center max-sm:h-auto"
+        className="h-[100vh]flex items-center justify-center max-sm:h-auto"
       >
         <div className="w-full max-w-[1200px] h-full p-8 flex flex-col items-center mx-auto">
           <h2 className="mb-8 text-4xl font-bold">Projects</h2>
@@ -70,7 +69,7 @@ function App() {
                 href="https://main.d42gyj6qo5xpt.amplifyapp.com/"
                 target="_blank"
               >
-                <button className="p-3 w-40 bg-orange-500 text-white rounded-md">
+                <button className="p-3 w-40 bg-[#e3a458] text-[#523122] rounded-md">
                   View Project
                 </button>
               </a>
@@ -86,7 +85,7 @@ function App() {
                 href="https://invoice-app-olive-theta.vercel.app/"
                 target="_blank"
               >
-                <button className="p-3 w-40 bg-orange-500 text-white rounded-md">
+                <button className="p-3 w-40 bg-[#e3a458] text-[#523122] rounded-md">
                   View Project
                 </button>
               </a>
@@ -96,7 +95,7 @@ function App() {
       </section>
 
       {/* <BackgroundBeams className="-z-50" /> */}
-      <footer className="py-5 flex bg-[#111111] items-center justify-center h-[30px]">
+      <footer className="py-5 flex bg-[#222123] items-center justify-center h-[30px]">
         <p className="text-white text-xs">
           &copy; Designed and developed by Nethaji!
         </p>
