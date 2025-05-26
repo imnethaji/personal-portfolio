@@ -47,7 +47,7 @@ function HeroSection() {
         <a
           href="#projects"
           rel="noopener noreferrer"
-          className="bg-white hover:scale-105 transition-all border-2 shadow-lg  border-[#222123] p-4 z-10 rounded-xl text-[#222123] hover:cursor-pointer flex items-center space-x-1"
+          className="bg-[#e3a458] hover:scale-105 transition-all font-bold shadow-lg p-4 z-10 rounded-xl text-[#7f3b2d] hover:cursor-pointer flex items-center space-x-1"
         >
           View my projects
         </a>
@@ -55,7 +55,7 @@ function HeroSection() {
           href="https://github.com/imnethaji"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-[#222123] p-4 shadow-lg hover:scale-105 transition-all rounded-xl text-white hover:cursor-pointer flex items-center space-x-1"
+          className="bg-[#e3a458] p-4 font-bold shadow-lg hover:scale-105 transition-all rounded-xl text-[#7f3b2d] hover:cursor-pointer flex items-center space-x-1"
         >
           <span>GitHub</span>
           <MoveUpRightIcon className="h-4" />
