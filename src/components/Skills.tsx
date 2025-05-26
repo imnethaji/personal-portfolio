@@ -14,17 +14,17 @@ const skills = [
 
 export default function Skills() {
   return (
-    <section id="skills" className="bg-black py-16  text-white">
+    <section id="skills" className="bg-black py-16  text-white h-screen">
       <div className="max-w-6xl mx-auto px-6">
         <h2 className="text-4xl font-bold mb-14 text-center">Skills</h2>
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 justify-items-center">
           {skills.map((skill) => (
             <div
               key={skill.name}
-              className="flex flex-col items-center gap-2 transition-transform transform hover:scale-105"
+              className="flex flex-col  bg-white hover:text-orange-500 bg-opacity-10 items-center gap-2 transition-transform transform hover:scale-105 rounded-lg w-40 h-40 justify-center"
             >
               <div className="text-5xl">{skill.icon}</div>
-              <p className="text-lg font-medium">{skill.name}</p>
+              <p className="text-lg font-medium ">{skill.name}</p>
             </div>
           ))}
         </div>

@@ -20,9 +20,9 @@ const Nav = () => {
   return (
     <nav
       ref={navBarRef}
-      className="flex items-center justify-center w-screen py-5 max-sm:px-0 top-8 max-sm:top-0 absolute backdrop-blur-sm"
+      className="flex z-50 items-center justify-center w-screen py-5 max-sm:px-0 top-8 max-sm:top-0 absolute backdrop-blur-sm"
     >
-      <div className="container w-[60%] rounded-full bg-white bg-opacity-10 max-sm:bg-opacity-0 max-sm:bg-none py-5 px-24 max-sm:px-0 max-sm:h-auto max-sm:rounded-xl flex max-sm:flex-col justify-between items-center">
+      <div className="container w-[60%] rounded-full bg-black bg-opacity-70 max-sm:w-auto max-sm:px-4 max-sm:bg-opacity-50 max-sm:bg-none py-5 px-24 max-sm:h-auto max-sm:rounded-xl flex max-sm:flex-col justify-between items-center">
         <Link to="/" className="max-sm:m-auto">
           <img
             className="w-10"

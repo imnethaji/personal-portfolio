@@ -1,7 +1,5 @@
 import { useEffect, useRef } from "react";
 import Lenis from "lenis";
-import Nav from "./components/Nav";
-import { BackgroundBeams } from "./components/ui/background-beams";
 import todoImage from "./assets/to-do-app.png";
 import invoiceAppImage from "./assets/invoice-app.png";
 import gsap from "gsap";
@@ -44,11 +42,11 @@ function App() {
 
   return (
     <div>
+      {/* <Nav /> */}
       <div className="HeroSection">
-        <Nav />
         <HeroSection />
-        <Skills />
       </div>
+      <Skills />
       <section
         id="projects"
         className="bg-white h-[100vh]flex items-center justify-center max-sm:h-auto"
@@ -96,8 +94,9 @@ function App() {
           </div>
         </div>
       </section>
-      <BackgroundBeams className="-z-50" />
-      <footer className="py-6 flex items-center justify-center h-[30px]">
+
+      {/* <BackgroundBeams className="-z-50" /> */}
+      <footer className="py-5 flex bg-[#111111] items-center justify-center h-[30px]">
         <p className="text-white text-xs">
           &copy; Designed and developed by Nethaji!
         </p>

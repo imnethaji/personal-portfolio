@@ -23,7 +23,7 @@ export default function DownArrow() {
     <button onClick={handleClick} className="mt-20">
       <svg
         ref={arrowRef}
-        className="w-8 h-8 absolute bottom-14 text-white"
+        className="w-8 h-8 absolute bottom-14 text-[#111111]"
         fill="none"
         stroke="currentColor"
         strokeWidth="2"
