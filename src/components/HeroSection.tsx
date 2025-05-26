@@ -14,13 +14,25 @@ function HeroSection() {
 
     tl.fromTo(
       headingRef.current,
-      { opacity: 0, y: 50 },
-      { opacity: 1, y: 0, duration: 1, ease: "power3.out" }
+      { opacity: 0, x: -1000 },
+      {
+        opacity: 1,
+        x: 0,
+        duration: 2,
+        delay: 0.5,
+        ease: "elastic",
+      }
     ).fromTo(
       subheadingRef.current,
-      { opacity: 0, y: 20 },
-      { opacity: 1, y: 0, duration: 1, ease: "power3.out" },
-      "-=0.5"
+      { opacity: 0, y: 30 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1.5,
+        ease: "elastic",
+        stagger: 0.2,
+      },
+      "-=0.3"
     );
   }, []);
 
