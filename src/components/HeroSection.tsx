@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import DownArrow from "./DownArrow";
+
 import { AuroraBackground } from "./ui/aurora-background";
 import { MoveUpRightIcon } from "lucide-react";
 
@@ -31,9 +32,7 @@ function HeroSection() {
           className="text-[#111111] text-[6em] font-bold max-sm:text-[3em]"
         >
           Hi, I'm
-          {/* <Cover> */}
           <span className="text-orange-500 ml-4">Nethaji</span>
-          {/* </Cover> */}
         </h1>
         <h2
           ref={subheadingRef}
