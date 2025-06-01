@@ -15,7 +15,7 @@ export default function DownArrow() {
   }, []);
 
   const handleClick = () => {
-    const nextSection = document.getElementById("projects");
+    const nextSection = document.getElementById("skills");
     nextSection?.scrollIntoView({ behavior: "smooth" });
   };
 
