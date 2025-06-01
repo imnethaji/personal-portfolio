@@ -2,13 +2,15 @@ import { useEffect, useRef } from "react";
 import Lenis from "lenis";
 import todoImage from "./assets/to-do-app.png";
 import invoiceAppImage from "./assets/invoice-app.png";
+import rockPaperScissorsAppImage from "./assets/rock-paper-scissors.png";
+import multiStepFormImage from "./assets/multi-step-form-app.png";
 import gsap from "gsap";
 import Skills from "./components/Skills";
 import HeroSection from "./components/HeroSection";
 
 function App() {
   const projectContainerCSS =
-    "bg-[#222123] flex flex-col items-center justify-between h-[400px] p-8 rounded-2xl text-white max-sm:h-auto";
+    "bg-[#222123] flex flex-col items-center justify-between w-[350px] max-sm:w-[90%] h-[500px] py-8 rounded-2xl text-white max-sm:h-[530px]";
 
   // Initialize Lenis for smooth scrolling
   useEffect(() => {
@@ -48,11 +50,11 @@ function App() {
       <Skills />
       <section
         id="projects"
-        className="h-[100vh]flex items-center justify-center max-sm:h-auto"
+        className="flex items-center justify-center h-screen max-sm:h-auto"
       >
-        <div className="w-full max-w-[1200px] h-full p-8 flex flex-col items-center mx-auto">
+        <div className="w-full max-w-[80vw] max-sm:max-w-[90vw] h-full max-sm:h-auto p-8 flex flex-col items-center max-sm:justify-center max-sm:px-0">
           <h2 className="mb-8 text-4xl font-bold">Projects</h2>
-          <div className="grid grid-rows-2 grid-cols-2 grid-flow-row gap-8 max-sm:grid-cols-1 max-sm:grid-rows-none">
+          <div className="flex flex-wrap justify-between gap-6 w-full max-sm:justify-center">
             <div
               className={projectContainerCSS}
               style={{
@@ -60,10 +62,9 @@ function App() {
                 backgroundSize: "contain",
                 backgroundRepeat: "no-repeat",
                 backgroundPosition: "center",
-                height: "400px",
               }}
             >
-              <h1>Simple To-do App</h1>
+              <h1 className="font-bold text-md">Simple To-do App</h1>
               <div className="imageContainer"></div>
               <a
                 href="https://main.d42gyj6qo5xpt.amplifyapp.com/"
@@ -74,8 +75,48 @@ function App() {
                 </button>
               </a>
             </div>
+            <div
+              className={projectContainerCSS}
+              style={{
+                backgroundImage: `url(${multiStepFormImage})`,
+                backgroundSize: "contain",
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "center",
+              }}
+            >
+              <h1 className="font-bold text-md">Multi-step form</h1>
+              <div className="imageContainer"></div>
+              <a
+                href="https://main.d2rdekw3ov6iln.amplifyapp.com/"
+                target="_blank"
+              >
+                <button className="p-3 w-40 bg-[#e3a458] text-[#523122] rounded-md">
+                  View Project
+                </button>
+              </a>
+            </div>
+            <div
+              className={projectContainerCSS}
+              style={{
+                backgroundImage: `url(${rockPaperScissorsAppImage})`,
+                backgroundSize: "contain",
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "center",
+              }}
+            >
+              <h1 className="font-bold text-md">Rock Paper Scissor</h1>
+              <div className="imageContainer"></div>
+              <a
+                href="https://rock-paper-scissor-iota-one.vercel.app/"
+                target="_blank"
+              >
+                <button className="p-3 w-40 bg-[#e3a458] text-[#523122] rounded-md">
+                  View Project
+                </button>
+              </a>
+            </div>
             <div className={projectContainerCSS}>
-              <h1>Invoice App</h1>
+              <h1 className="font-bold text-md">Invoice App</h1>
               <img
                 className="h-[200px] max-sm:h-[300px]"
                 src={invoiceAppImage}

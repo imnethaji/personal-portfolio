@@ -49,7 +49,7 @@ function HeroSection() {
       </h1>
       <h2
         ref={subheadingRef}
-        className="text-[#222123] text-[1.5em] font-semibold max-sm:text-[1em] text-center mt-4"
+        className="text-[#222123] text-[1.5em] font-semibold w-[90%] max-sm:w-[80%] max-sm:text-[1em] text-center mt-4"
       >
         Aspiring front-end developer crafting responsive and intuitive web apps
         using HTML, CSS, and JavaScript.
