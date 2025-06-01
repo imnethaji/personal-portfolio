@@ -10,7 +10,7 @@ import HeroSection from "./components/HeroSection";
 
 function App() {
   const projectContainerCSS =
-    "bg-[#222123] flex flex-col items-center justify-between w-[350px] max-sm:w-[90%] h-[500px] py-8 rounded-2xl text-white max-sm:h-[530px]";
+    "bg-[#222123] flex flex-col items-center justify-between w-[20vw] max-md:w-[90%] max-lg:w-[45%] max-sm:w-[90%] h-[30vw] py-8 rounded-2xl text-white max-sm:h-[530px] max-md:h-[530px] max-lg:h-[530px]";
 
   // Initialize Lenis for smooth scrolling
   useEffect(() => {
@@ -50,9 +50,9 @@ function App() {
       <Skills />
       <section
         id="projects"
-        className="flex items-center justify-center h-screen max-sm:h-auto"
+        className="flex items-center justify-center h-screen max-md:h-auto max-lg:h-auto max-sm:h-auto"
       >
-        <div className="w-full max-w-[80vw] max-sm:max-w-[90vw] h-full max-sm:h-auto p-8 flex flex-col items-center max-sm:justify-center max-sm:px-0">
+        <div className="w-full max-w-screen max-sm:max-w-[90vw] h-full max-md:h-auto max-sm:h-auto p-8 flex flex-col items-center max-sm:justify-center max-sm:px-0">
           <h2 className="mb-8 text-4xl font-bold">Projects</h2>
           <div className="flex flex-wrap justify-between gap-6 w-full max-sm:justify-center">
             <div
